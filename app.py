@@ -22,5 +22,7 @@ print(name + ' likes ' + favColor)
 
 # Asking for the birth year to calculate the year
 birth_year = input("Birth year: ")
+print(type(birth_year))  # checking the datatype of the birth_year variable
 Age = 2021 - int(birth_year)   # here we convert the birth_year to an int()
+print(type(Age))  # checking the datatype of the Age variable
 print(name + ' is ' + str(Age) + ' years old.')
