@@ -21,8 +21,9 @@ favColor = input("What is your Favorite Color? ")
 print(name + ' likes ' + favColor)
 
 # Asking for the birth year to calculate the year
-birth_year = input("Birth year: ")
-print(type(birth_year))  # checking the datatype of the birth_year variable using the type()
-Age = 2021 - int(birth_year)   # here we convert the birth_year to an int()
+date_of_birth = input("Birth year: ")
+print(type(date_of_birth))  # checking the datatype of the birth_year variable using the type()
+Age = 2021 - int(date_of_birth)   # here we convert the birth_year to an int()
 print(type(Age))  # checking the datatype of the Age variable using the type()
 print(name + ' is ' + str(Age) + ' years old.')
+
