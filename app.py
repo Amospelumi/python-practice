@@ -27,3 +27,35 @@ Age = 2021 - int(date_of_birth)   # here we convert the birth_year to an int()
 print(type(Age))  # checking the datatype of the Age variable using the type()
 print(name + ' is ' + str(Age) + ' years old.')
 
+
+message = '''
+Hi John,
+
+Here is our first emnail to you.
+
+Thank you,
+The support teams.
+'''
+print(message)
+
+
+course = "Python for Beginners"
+courseCopy = course[:]
+cour = course[1:-1]
+print(courseCopy)
+print(cour)
+
+first = "John"
+last = "Smith"
+msg = f"{first} is also known as {last} in case you don't know"
+print(msg)
+
+course = "python for Beginners"
+lent = len(course)
+print(lent)
+print(course.upper())
+print(course.lower())
+print(course)
+print(course.find("n"))
+
+
