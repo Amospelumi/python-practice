@@ -1,7 +1,7 @@
-# print("Abiodun Oluwapelumi")
-# print("0----")
-# print(" ||||")
-# print("*" * 10)
+print("Abiodun Oluwapelumi")
+print("0----")
+print(" ||||")
+print("*" * 10)
 
 # Variable Data types
 price = 20  # int
@@ -50,12 +50,33 @@ last = "Smith"
 msg = f"{first} is also known as {last} in case you don't know"
 print(msg)
 
+
+# Using some python methods to format strings
 course = "python for Beginners"
 lent = len(course)
+cupper = course.upper()
+clower = course.lower()
+crep = course.replace("python", "Javascript & PHP")
 print(lent)
-print(course.upper())
-print(course.lower())
-print(course)
-print(course.find("n"))
+print(cupper)
+print(clower)
+print(crep)
+print("Javascript" in crep)
+print(course.title())
 
 
+# Using Math module
+import math
+
+print(math.ceil(2.9))
+
+#If statement
+house_price = 1000000
+has_good_credit = True
+
+if has_good_credit:
+    down_payment = (house_price * 10) / 100
+    print(f"Down Payment = ${down_payment}")
+else:
+    down_payment = (house_price * 20) / 100
+    print(f"Down Payment = ${down_payment}")
