@@ -80,3 +80,47 @@ if has_good_credit:
 else:
     down_payment = (house_price * 20) / 100
     print(f"Down Payment = ${down_payment}")
+
+high_income = True
+good_credit = True
+
+if high_income and good_credit:
+    print("Eligible for loan.")
+else:
+    print("Oh!, You are not eligible for the loan.")
+
+name = input("What is your name? ")
+if len(name) < 3:
+    print("Name must be at least 3 characters.")
+elif len(name) > 50:
+    print("Name can be a maximum of 50 characters.")
+else:
+    print("Name looks good.")
+
+
+i = 1
+
+while i<=5:
+    print(i)
+    i += 1
+
+i = 0
+while i<=5:
+    print(i * '*')
+    i += 1
+print('done')
+
+# Guessing game
+secret_number = 2
+guess_limit = 3
+count = 0
+
+while count < guess_limit:
+    guess = int(input("Guess: "))
+    count += 1
+
+    if guess == secret_number:
+        print("Congratulations! you won.")
+        break
+else:
+    print("Sorry!, you ran out of luck.")
