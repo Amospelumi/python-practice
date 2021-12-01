@@ -164,3 +164,14 @@ while i < 5:
 
 else:
     print("Hello you have put too much of invalid request, App terminated.")
+
+using the for loop
+for one in [1, 2, 3, 4, 5]:
+    print(one)
+
+for one in range(2, 10, 2):
+    print(one)
+
+names = ['shola', 'subomi', 'gideon']
+for name in names:
+    print(f'Happy Birthday {name}')
