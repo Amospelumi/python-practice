@@ -100,12 +100,12 @@ else:
 
 i = 1
 
-while i<=5:
+while i <= 5:
     print(i)
     i += 1
 
 i = 0
-while i<=5:
+while i <= 5:
     print(i * '*')
     i += 1
 print('done')
@@ -124,3 +124,43 @@ while count < guess_limit:
         break
 else:
     print("Sorry!, you ran out of luck.")
+
+# car engine game
+guide = '''
+    Start: This start the car engine.
+    Stop: This stop the car engine.
+    Quit: This stop the car engine.
+'''
+name = input("Hello what is your name? ")
+intro = f"Welcome, {name} kindly type 'GUIDE' to show guide on how to use the system"
+print(intro)
+i = 0
+has_started = False
+
+while i < 5:
+    req = input("Input a request: ")
+    req = req.upper()
+    if req == 'GUIDE':
+        print(guide)
+    elif req == 'START':
+        if has_started:
+            print("Car already started!")
+        else:
+            has_started = True
+            print("Car started.. ready to go.")
+
+    elif req == 'STOP':
+        if not has_started:
+            print("Car stopped already")
+        else:
+            has_started = False
+            print("Car stopped.")
+
+    elif req == 'QUIT':
+        print("Application Terminated.")
+        break
+    else:
+        print("Sorry i don't understand you")
+
+else:
+    print("Hello you have put too much of invalid request, App terminated.")
