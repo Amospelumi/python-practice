@@ -175,3 +175,10 @@ for one in range(2, 10, 2):
 names = ['shola', 'subomi', 'gideon']
 for name in names:
     print(f'Happy Birthday {name}')
+
+prices = [10, 20, 30]
+total = 0
+for price in prices:
+    price += price
+print(f"Total Price = {price}")
+
