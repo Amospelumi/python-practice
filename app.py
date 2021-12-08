@@ -306,9 +306,19 @@ class Person(HumanBeing):
 person = Person("John")
 person.talk()
 
+# Importing Packages and modules
+import converters
+from converters import kg_to_lbs
+from utility import find_max
+from ecommerce import shipping
 
 
+shipping.calcu(2 * 2)
 
+
+kg_to_lbs(200)
+converters.lbs_to_kg(100)
+find_max()
 
 
 
