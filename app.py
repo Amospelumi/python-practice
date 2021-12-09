@@ -1,3 +1,12 @@
+# Importing Packages and modules
+import converters
+from converters import kg_to_lbs
+from utility import find_max
+from ecommerce import shipping
+from pathlib import Path
+import random
+
+
 print("Abiodun Oluwapelumi")
 print("0----")
 print(" ||||")
@@ -242,7 +251,9 @@ for message in words:
     output += Emojis.get(message, message) + " "
 print(output)
 
-function
+# function
+
+
 def greet_user(name):
     print(f'Hi, {name}')
     print('Welcome on board')
@@ -306,19 +317,41 @@ class Person(HumanBeing):
 person = Person("John")
 person.talk()
 
-# Importing Packages and modules
-import converters
-from converters import kg_to_lbs
-from utility import find_max
-from ecommerce import shipping
+
+
 
 
 shipping.calcu(2 * 2)
-
-
 kg_to_lbs(200)
 converters.lbs_to_kg(100)
 find_max()
+
+
+
+for number in range(4):
+    print(random.randint(1, 5))
+
+members = [11, 12, 13, 14]
+
+print(random.choice(members))
+
+
+class Dice:
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+
+
+dice = Dice()
+print(dice.roll())
+
+
+path = Path("TESTING")
+print(path.rmdir())
+
+for file in path.glob("*.py"):
+    print(file)
 
 
 
